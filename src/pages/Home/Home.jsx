@@ -7,6 +7,7 @@ import Blog from './components/Blog'
 import Xmas from './components/Xmas'
 import Hero from './components/Hero'
 import Countdown from './components/Countdown'
+import ScheduleXmas24 from './components/ScheduleXmas24'
 
 function Home () {
   return (
@@ -17,6 +18,9 @@ function Home () {
         </div>
         <div className='flex items-center justify-center mb-14 lg:mb-20'>
           <Countdown />
+        </div>
+        <div className='w-full p-12 sm:p-16 md:p-20 lg:p-24 xl:p-32'>
+          <ScheduleXmas24 />
         </div>
         <div className='w-full h-fit sm:flex pb-2'>
           <div className='w-full sm:w-1/2 p-2 '>

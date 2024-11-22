@@ -12,7 +12,7 @@ export default function Xmas () {
           </Link>
         </h2>
         <h4 className=' font-semibold text-sm w-full text-center pt-2 pb-4 tracking-wide'>
-          <Link to='/creaWebPage-ViteReactTailwind/xmas' className=' cursor-pointer hover:text-primary active:text-secondary'>
+          <Link to='/creaWebPage-ViteReactTailwind/xmas' className=' cursor-pointer text-accent font-bold hover:text-primary active:text-secondary'>
             Más informacion
           </Link>
         </h4>
