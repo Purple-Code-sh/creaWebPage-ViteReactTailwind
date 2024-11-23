@@ -11,9 +11,9 @@ export default function Xmas () {
             Evento Xmas 2024
           </Link>
         </h2>
-        <h4 className=' font-semibold text-sm w-full text-center pt-2 pb-4 tracking-wide'>
+        <h4 className=' font-semibold text-base w-full text-center pt-2 pb-4 tracking-wide lg:text-lg 2xl:text-xl underline'>
           <Link to='/creaWebPage-ViteReactTailwind/xmas' className=' cursor-pointer text-accent font-bold hover:text-primary active:text-secondary'>
-            Más informacion
+            Más información
           </Link>
         </h4>
       </div>
