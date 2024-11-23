@@ -80,9 +80,9 @@ function Xmas () {
         </section>
       </div>
       <div className='w-screen grid grid-cols-3 mt-0 p-12 sm:px-16 md:px-20 lg:px-24 xl:px-32 gap-6 md:gap-32 lg:gap-44 2xl:gap-52 '>
-        <img src={logoRobochallenge} alt='RoboChallenge logo' className='w-full h-auto opacity-70 ' />
-        <img src={logoRobotics} alt='Robotics by Olami ORT logo' className='w-full h-auto opacity-70 ' />
-        <img src={logoXpertMe} alt='XpertMe logo' className='w-full h-auto opacity-70 ' />
+        <img src={logoRobochallenge} alt='RoboChallenge logo' className='w-full h-auto opacity-80 ' />
+        <img src={logoRobotics} alt='Robotics by Olami ORT logo' className='w-full h-auto opacity-80 ' />
+        <img src={logoXpertMe} alt='XpertMe logo' className='w-full h-auto opacity-80 ' />
       </div>
     </div>
   )

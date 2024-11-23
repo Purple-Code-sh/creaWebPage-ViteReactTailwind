@@ -12,9 +12,9 @@ const ScheduleXmas24 = () => {
         <img src={scheduleSecondDay} alt='' className='w-full h-auto' />
       </div>
       <div className='grid grid-cols-3 -mx-6 mt-16 lg:mt-28 gap-6 md:gap-32 lg:gap-44 2xl:gap-52 '>
-        <img src={logoRobochallenge} alt='RoboChallenge logo' className='w-full h-auto opacity-70 ' />
-        <img src={logoRobotics} alt='Robotics by Olami ORT logo' className='w-full h-auto opacity-70 ' />
-        <img src={logoXpertMe} alt='XpertMe logo' className='w-full h-auto opacity-70 ' />
+        <img src={logoRobochallenge} alt='RoboChallenge logo' className='w-full h-auto opacity-80 ' />
+        <img src={logoRobotics} alt='Robotics by Olami ORT logo' className='w-full h-auto opacity-80 ' />
+        <img src={logoXpertMe} alt='XpertMe logo' className='w-full h-auto opacity-80 ' />
       </div>
     </>
   )
