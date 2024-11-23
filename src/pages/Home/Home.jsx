@@ -19,7 +19,7 @@ function Home () {
         <div className='flex items-center justify-center mb-14 lg:mb-20'>
           <Countdown />
         </div>
-        <div className='w-full p-12 sm:p-16 md:p-20 lg:p-24 xl:p-32'>
+        <div className='w-full p-12 sm:p-16 md:p-20 lg:p-24 xl:p-32 pt-0'>
           <ScheduleXmas24 />
         </div>
         <div className='w-full h-fit sm:flex pb-2'>

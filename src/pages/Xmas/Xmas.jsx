@@ -3,6 +3,9 @@ import { useEffect } from 'react'
 import snowMan from '../../assets/snowMan.png'
 import creaLogo from '../../assets/creaLogo_alt.png'
 import { Link } from 'react-router-dom'
+import logoRobochallenge from '../../assets/logo_robochallenge.jpg'
+import logoRobotics from '../../assets/logo_robotics.jpg'
+import logoXpertMe from '../../assets/logo_xpertMe.jpg'
 
 function Xmas () {
   useEffect(() => {
@@ -19,7 +22,7 @@ function Xmas () {
                 <p className=' max-w-prose font-bold text-base lg:text-lg mx-auto px-12 pt-6 '>
                   Xmas es el evento anual donde se une la{' '}
                   <strong>robótica de competencia</strong> y el{' '}
-                  <strong>networking</strong> entre entusiastas de la tecnologia,
+                  <strong>networking</strong> entre entusiastas de la tecnología,
                   estudiantes y empresas.
                 </p>
                 <p className=' max-w-prose text-base lg:text-lg mx-auto px-12 pt-9 '>
@@ -31,7 +34,7 @@ function Xmas () {
                 </h3>
                 <div className='mx-auto mt-8 w-fit flex-none text-base lg:text-lg font-medium rounded-xl py-3 px-6 text-black bg-primary hover:bg-secondary/85 hover:scale-105'>
                   <Link to='https://docs.google.com/forms/d/e/1FAIpQLSdPmPZQSUtVt3pN-Dk3IOiIFgLFZ8DT6pNls18MvjHuOVF6lQ/viewform?usp=sf_link' className=' active:text-white hover:font-semibold cursor-pointer'>
-                    Inscribete
+                    Inscríbete
                   </Link>
                 </div>
               </div>
@@ -44,7 +47,7 @@ function Xmas () {
             </section>
           </main>
 
-          <div className=' lg:pt-12 py-14 mb-20 cursor-default bg-gradient-to-b from-bg_accent_dark/60 to-black'>
+          <div className=' lg:pt-12 cursor-default bg-gradient-to-b from-bg_accent_dark/60 to-black'>
             <p className=' font-bold max-w-prose text-base lg:text-lg mx-auto px-8'>
               Las categorías en las que se realizarán las competencias son las
               siguientes:
@@ -75,6 +78,11 @@ function Xmas () {
             </p>
           </div>
         </section>
+      </div>
+      <div className='w-screen grid grid-cols-3 mt-0 p-12 sm:px-16 md:px-20 lg:px-24 xl:px-32 gap-6 md:gap-32 lg:gap-44 2xl:gap-52 '>
+        <img src={logoRobochallenge} alt='RoboChallenge logo' className='w-full h-auto opacity-70 ' />
+        <img src={logoRobotics} alt='Robotics by Olami ORT logo' className='w-full h-auto opacity-70 ' />
+        <img src={logoXpertMe} alt='XpertMe logo' className='w-full h-auto opacity-70 ' />
       </div>
     </div>
   )
