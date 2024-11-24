@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import creaNeedYou from '../assets/creaNeedYou.webp'
+import posterXmas7 from '../../../assets/xmas7.jpg'
 
 export default function Xmas () {
   return (
@@ -17,9 +17,9 @@ export default function Xmas () {
           </Link>
         </h4>
       </div>
-      <div className='h-32 sm:h-80 flex place-content-center pb-4'>
+      <div className=' sm:h-80 flex place-content-center pb-4'>
         <Link to='/creaWebPage-ViteReactTailwind/xmas' className=' cursor-pointer h-full'>
-          <img src={creaNeedYou} alt='' className=' h-full' />
+          <img src={posterXmas7} alt='' className='h-full p-4 md:p-0' />
         </Link>
       </div>
     </div>
