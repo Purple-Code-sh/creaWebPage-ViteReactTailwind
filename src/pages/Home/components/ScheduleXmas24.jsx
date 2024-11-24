@@ -1,8 +1,6 @@
 import scheduleFirstDay from '../../../assets/scheduleFirstDay.png'
 import scheduleSecondDay from '../../../assets/scheduleSecondDay.png'
-import logoRobochallenge from '../../../assets/logo_robochallenge.jpg'
-import logoRobotics from '../../../assets/logo_robotics.jpg'
-import logoXpertMe from '../../../assets/logo_xpertMe.jpg'
+import PartnersLogos from '../../../components/PartnersLogos'
 
 const ScheduleXmas24 = () => {
   return (
@@ -11,10 +9,8 @@ const ScheduleXmas24 = () => {
         <img src={scheduleFirstDay} alt='' className='w-full h-auto' />
         <img src={scheduleSecondDay} alt='' className='w-full h-auto' />
       </div>
-      <div className='grid grid-cols-3 -mx-6 mt-16 lg:mt-28 gap-6 md:gap-32 lg:gap-44 2xl:gap-52 '>
-        <img src={logoRobochallenge} alt='RoboChallenge logo' className='w-full h-auto opacity-80 ' />
-        <img src={logoRobotics} alt='Robotics by Olami ORT logo' className='w-full h-auto opacity-80 ' />
-        <img src={logoXpertMe} alt='XpertMe logo' className='w-full h-auto opacity-80 ' />
+      <div className='mt-16 mx-0 md:mx-10 lg:-mx-6 lg:mt-24'>
+        <PartnersLogos />
       </div>
     </>
   )

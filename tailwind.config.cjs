@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 
-// Se recomienda que el tamano de las imagenes que se agreguen a la pagina
+// Se recomienda que el tamaño de las imágenes que se agreguen a la pagina
 // sea de 1920x1080 pixeles, ya que se adecua a los breakpoints de pantalla
-// y puede recortarse a 1080x1080 en caso de ser necesaria la resolucion 1:1
+// y puede recortarse a 1080x1080 en caso de ser necesaria la resolución 1:1
 
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
