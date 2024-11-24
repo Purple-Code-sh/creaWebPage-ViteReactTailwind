@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import snowMan from '../../assets/snowMan.png'
 import creaLogo from '../../assets/creaLogo_alt.png'
 import { Link } from 'react-router-dom'
