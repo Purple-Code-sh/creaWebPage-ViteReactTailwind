@@ -1,5 +1,5 @@
-// General components
 import { useEffect } from 'react'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import snowMan from '../../assets/snowMan.png'
 import creaLogo from '../../assets/creaLogo_alt.png'
 import { Link } from 'react-router-dom'
@@ -11,45 +11,47 @@ function Xmas () {
   }, [])
 
   return (
-    <div className=' p-0 m-0 pt-14'>
+    <div className='p-0 m-0 pt-14'>
       <div>
         <section className='w-screen'>
-          <main className=' w-full lg:flex bg-gradient-to-b from-black to-bg_accent_dark/60'>
-            <section className=' flex flex-col lg:flex-col lg:pr-14 w-full lg:w-1/2'>
-              <div className=' flex-1 cursor-default content-center'>
-                <p className=' max-w-prose font-bold text-base lg:text-lg mx-auto px-12 pt-6 '>
+          <main className='w-full lg:flex bg-gradient-to-b from-black to-bg_accent_dark/60'>
+            <section className='flex flex-col lg:flex-col lg:pr-14 w-full lg:w-1/2'>
+              <div className='flex-1 cursor-default content-center'>
+                <p className='max-w-prose font-bold text-base lg:text-lg mx-auto px-12 pt-6'>
                   Xmas es el evento anual donde se une la{' '}
                   <strong>robótica de competencia</strong> y el{' '}
                   <strong>networking</strong> entre entusiastas de la tecnología,
                   estudiantes y empresas.
                 </p>
-                <p className=' max-w-prose text-base lg:text-lg mx-auto px-12 pt-9 '>
-                  Es organizado por el Club de Robótica de ESIME Azcapotzalco, por
-                  lo que se lleva acabo en las instalaciones de la universidad.
+                <p className='max-w-prose text-base lg:text-lg mx-auto px-12 pt-9'>
+                  Es organizado por el Club de Robótica de ESIME Azcapotzalco, por lo
+                  que se lleva acabo en las instalaciones de la universidad.
                 </p>
-                <h3 className=' text-lg lg:text-xl text-center mt-10 text-primary font-bold'>
+                <h3 className='text-lg lg:text-xl text-center mt-10 text-primary font-bold'>
                   4 y 5 de Diciembre ¡No faltes!
                 </h3>
                 <div className='mx-auto mt-8 w-fit flex-none text-base lg:text-lg font-medium rounded-xl py-3 px-6 text-black bg-primary hover:bg-secondary/85 hover:scale-105'>
-                  <Link to='https://docs.google.com/forms/d/e/1FAIpQLSdPmPZQSUtVt3pN-Dk3IOiIFgLFZ8DT6pNls18MvjHuOVF6lQ/viewform?usp=sf_link' className=' active:text-white hover:font-semibold cursor-pointer'>
+                  <Link
+                    to='https://docs.google.com/forms/d/e/1FAIpQLSdPmPZQSUtVt3pN-Dk3IOiIFgLFZ8DT6pNls18MvjHuOVF6lQ/viewform?usp=sf_link'
+                    className='active:text-white hover:font-semibold cursor-pointer'
+                  >
                     Inscríbete
                   </Link>
                 </div>
               </div>
             </section>
             <section className='w-full lg:w-1/2'>
-              <div className=' mt-6 pl-6 pr-2 flex items-center mx-auto w-full'>
-                <img src={snowMan} alt='' className=' w-1/2 p-3' />
-                <img src={creaLogo} alt='' className=' w-1/3' />
+              <div className='mt-6 pl-6 pr-2 flex items-center mx-auto w-full'>
+                <img src={snowMan} alt='' className='w-1/2 p-3' />
+                <img src={creaLogo} alt='' className='w-1/3' />
               </div>
             </section>
           </main>
 
-          <div className=' lg:pt-12 cursor-default bg-gradient-to-b from-bg_accent_dark/60 to-black'>
-            <p className=' font-bold max-w-prose text-base lg:text-lg mx-auto px-8'>
-              Las categorías en las que se realizarán las competencias son las
-              siguientes:
-              <ul className=' font-normal pt-6 text-txt_white_purple'>
+          <div className='lg:pt-12 cursor-default bg-gradient-to-b from-bg_accent_dark/60 to-black'>
+            <p className='font-bold max-w-prose text-base lg:text-lg mx-auto px-8'>
+              Las categorías en las que se realizarán las competencias son las siguientes:
+              <ul className='font-normal pt-6 text-txt_white_purple'>
                 <li>Minisumo autónomo profesional</li>
                 <li>Minisumo autónomo amateur</li>
                 <li>Minisumo RC profesional</li>
@@ -65,11 +67,11 @@ function Xmas () {
                 <li>Insecto</li>
               </ul>
             </p>
-            <p className=' max-w-prose text-sm mx-auto px-8 pt-7'>
-              Puedes consultar los premios para cada categoría dando click {' '}
+            <p className='max-w-prose text-sm mx-auto px-8 pt-7'>
+              Puedes consultar los premios para cada categoría dando click{' '}
               <a
                 href='https://www.facebook.com/cc.roboticaazc'
-                className='text-primary font-bold underline underline-offset-2 hover:text-secondary active:text-accent '
+                className='text-primary font-bold underline underline-offset-2 hover:text-secondary active:text-accent'
               >
                 aquí
               </a>
@@ -77,7 +79,41 @@ function Xmas () {
           </div>
         </section>
       </div>
-      <div className='w-screen mt-0 p-12 sm:px-16 md:px-20 lg:px-24 xl:px-32  '>
+
+      <div className='w-screen flex justify-center my-12'>
+        {/* Mapa agregado aquí */}
+        <div className='h-96 w-1/2'>
+          <h2 className='mx-auto text-center font-bold text-sm sm:text-base md:text-xl lg:text-2xl tracking-wide mb-4 text-primary '>Ubicación del evento</h2>
+          <MapContainer
+            center={[19.49993, -99.14609]} // Coordenadas de ESIME Azcapotzalco
+            zoom={16}
+            className='h-full w-full'
+          >
+            <TileLayer
+              url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+              attribution="&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
+            />
+            <Marker
+              position={[19.49993, -99.14609]} // Coordenadas del marcador
+              eventHandlers={{
+                click: () => {
+                  window.open(
+                    'https://www.google.com/maps?q=19.49993,-99.14609',
+                    '_blank' // Abre Google Maps en una nueva pestaña
+                  )
+                }
+              }}
+            >
+              <Popup>
+                ESIME Azcapotzalco - ¡Haz clic para ver en Google Maps!
+              </Popup>
+            </Marker>
+          </MapContainer>
+
+        </div>
+
+      </div>
+      <div className='w-screen mt-0 p-12 sm:px-16 md:px-20 lg:px-24 xl:px-32'>
         <PartnersLogos />
       </div>
     </div>

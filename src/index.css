@@ -1,14 +1,14 @@
+@import "../node_modules/leaflet/dist/leaflet.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
 
 * {
-
   transition-property: background-color, transform;
   transition-timing-function: ease-in-out;
   transition-duration: 300ms, 150ms;
-
 }
 
 body {
