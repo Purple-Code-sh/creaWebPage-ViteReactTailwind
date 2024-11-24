@@ -80,40 +80,24 @@ function Xmas () {
         </section>
       </div>
 
-      <div className='w-screen flex justify-center my-12'>
+      <div className='w-screen flex justify-center my-10'>
         {/* Mapa agregado aquí */}
-        <div className='h-96 w-1/2'>
-          <h2 className='mx-auto text-center font-bold text-sm sm:text-base md:text-xl lg:text-2xl tracking-wide mb-4 text-primary '>Ubicación del evento</h2>
-          <MapContainer
-            center={[19.49993, -99.14609]} // Coordenadas de ESIME Azcapotzalco
-            zoom={16}
-            className='h-full w-full'
-          >
-            <TileLayer
-              url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-              attribution="&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
+        <div className=' w-3/4'>
+          <h2 className='mx-auto text-center font-bold text-sm sm:text-base md:text-xl lg:text-2xl tracking-wide mb-6 text-primary '>Ubicación del evento</h2>
+          <div className='flex justify-center items-center'>
+            <iframe
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.5674036437363!2d-99.17596312568189!3d19.48853388180289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f865e1f932f1%3A0xfd53f914ccbd67b4!2sAv.%20de%20las%20Granjas%2C%20El%20Jaguey%2C%20Azcapotzalco%2C%2002519%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e1!3m2!1ses-419!2smx!4v1732412787388!5m2!1ses-419!2smx'
+              width='100%'
+              height='500'
+              style={{ border: 0 }}
+              allowFullScreen=''
+              loading='lazy'
+              referrerPolicy='no-referrer-when-downgrade'
             />
-            <Marker
-              position={[19.49993, -99.14609]} // Coordenadas del marcador
-              eventHandlers={{
-                click: () => {
-                  window.open(
-                    'https://www.google.com/maps?q=19.49993,-99.14609',
-                    '_blank' // Abre Google Maps en una nueva pestaña
-                  )
-                }
-              }}
-            >
-              <Popup>
-                ESIME Azcapotzalco - ¡Haz clic para ver en Google Maps!
-              </Popup>
-            </Marker>
-          </MapContainer>
-
+          </div>
         </div>
-
       </div>
-      <div className='w-screen mt-0 p-12 sm:px-16 md:px-20 lg:px-24 xl:px-32'>
+      <div className='w-screen mt-0 p-8 sm:px-16 md:px-20 lg:px-24 xl:px-32'>
         <PartnersLogos />
       </div>
     </div>
