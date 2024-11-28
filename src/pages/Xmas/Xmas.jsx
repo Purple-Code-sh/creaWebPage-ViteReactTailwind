@@ -77,15 +77,6 @@ function Xmas () {
                 })}
               </ul>
             </p>
-            <p className='max-w-prose text-sm mx-auto px-8 pt-7'>
-              Puedes consultar los premios para cada categoría dando click{' '}
-              <a
-                href='https://www.facebook.com/cc.roboticaazc'
-                className='text-primary font-bold underline underline-offset-2 hover:text-secondary active:text-accent'
-              >
-                aquí
-              </a>
-            </p>
           </div>
         </section>
       </div>
