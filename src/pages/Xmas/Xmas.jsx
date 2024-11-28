@@ -9,6 +9,21 @@ function Xmas () {
     window.scrollTo({ top: 0, behavior: 'instant' })
   }, [])
 
+  const categoriesArray = [
+    { name: 'Minisumo autónomo profesional', link: 'https://docs.google.com/document/d/1k5rlef1_2SyRy3tnRFDPJI_7D0vdKj6_lh6LedBeh5c/edit#heading=h.lrxxfbed5gkl' },
+    { name: 'Minisumo RC profesional', link: 'https://docs.google.com/document/d/1k5rlef1_2SyRy3tnRFDPJI_7D0vdKj6_lh6LedBeh5c/edit#heading=h.lrxxfbed5gkl' },
+    { name: 'Minisumo autónomo amateur', link: 'https://docs.google.com/document/d/1k5rlef1_2SyRy3tnRFDPJI_7D0vdKj6_lh6LedBeh5c/edit#heading=h.lrxxfbed5gkl' },
+    { name: 'Minisumo RC amateur', link: 'https://docs.google.com/document/d/1k5rlef1_2SyRy3tnRFDPJI_7D0vdKj6_lh6LedBeh5c/edit#heading=h.lrxxfbed5gkl' },
+    { name: 'Microsumo', link: 'https://docs.google.com/document/d/1Zd5_bKdkOZDldijVbBp4a5fnF_jPxZENVx-3VbZYtbQ/edit#heading=h.lrxxfbed5gkl' },
+    { name: 'Midisumo', link: 'https://docs.google.com/document/d/1cIoabS2r8yPsKuxU3GErV-bnoNiSVQJP2PMdBAeiTRM/edit?usp=sharing' },
+    { name: 'Seguidor de línea profesional', link: 'https://docs.google.com/document/d/1Rf05I65rkRRZ-yZVycBUTn5rYrbeFq3orRDf3bm4B-w/edit#heading=h.32gsyl5eo0v1' },
+    { name: 'Seguidor de línea amateur', link: 'https://docs.google.com/document/d/1Rf05I65rkRRZ-yZVycBUTn5rYrbeFq3orRDf3bm4B-w/edit#heading=h.32gsyl5eo0v1' },
+    { name: 'Guerra 1 lb', link: 'https://docs.google.com/document/d/17QN0frI29Gl5NHOOpmWr1Euv9XmDuQrkkwxR0Wv0xMI/edit#heading=h.mh48o2h9ps9f' },
+    { name: 'Guerra 3 lb', link: 'https://docs.google.com/document/d/17QN0frI29Gl5NHOOpmWr1Euv9XmDuQrkkwxR0Wv0xMI/edit#heading=h.mh48o2h9ps9f' },
+    { name: 'Guerra 12 lb', link: 'https://docs.google.com/document/d/17QN0frI29Gl5NHOOpmWr1Euv9XmDuQrkkwxR0Wv0xMI/edit#heading=h.mh48o2h9ps9f' },
+    { name: 'Robosoccer', link: 'https://docs.google.com/document/d/1An3iLLKc9C9CeJBwyR-7pms6LVJqUl4SOI4Y18ReCD8/edit' }
+  ]
+
   return (
     <div className='p-0 m-0 pt-14'>
       <div>
@@ -51,19 +66,15 @@ function Xmas () {
             <p className='font-bold max-w-prose text-base lg:text-lg mx-auto px-8'>
               Las categorías en las que se realizarán las competencias son las siguientes:
               <ul className='font-normal pt-6 text-txt_white_purple'>
-                <li>Minisumo autónomo profesional</li>
-                <li>Minisumo autónomo amateur</li>
-                <li>Minisumo RC profesional</li>
-                <li>Minisumo RC amateur</li>
-                <li>Microsumo</li>
-                <li>Midisumo</li>
-                <li>Seguidor de línea profesional</li>
-                <li>Seguidor de línea amateur</li>
-                <li>Guerra 1 lb</li>
-                <li>Guerra 3 lb</li>
-                <li>Guerra 12 lb</li>
-                <li>Robosoccer</li>
-                <li>Insecto</li>
+                {categoriesArray.map((item, key) => {
+                  return (
+                    <li key={key} className=' hover:text-primary active:text-secondary'>
+                      <Link to={`${item.link}`}>
+                        {item.name}
+                      </Link>
+                    </li>
+                  )
+                })}
               </ul>
             </p>
             <p className='max-w-prose text-sm mx-auto px-8 pt-7'>
