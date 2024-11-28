@@ -41,7 +41,7 @@ const Countdown = () => {
 
   return (
     <div className='text-center p-6 inline-block'>
-      <h1 className='text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl mb-6 md:mb-10 xl:mb-14 text-txt_white_purple'>
+      <h1 className='text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl mb-6 md:mb-8 xl:mb-10 text-txt_white_purple'>
         Tiempo restante para el evento
       </h1>
       <div className='flex justify-center space-x-10 md:space-x-12 xl:space-x-14'>
