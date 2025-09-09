@@ -5,7 +5,7 @@ import DropDownMenu from './DropDownMenu'
 
 export default function Header () {
   return (
-    <div className='opacity-90 px-4 py-1 flex place-items-center h-full max-w-full'>
+    <div className='opacity-90 px-4 py-1 flex place-items-center h-full relative max-w-full'>
       <button className='h-full flex-shrink-0'>
         <Link to='/creaWebPage-ViteReactTailwind/' className='h-full'>
           <img src={creaLogo} alt='CREA Logo' className='h-full' />
