@@ -43,11 +43,11 @@ function Xmas () {
                     que se lleva acabo en las instalaciones de la universidad.
                   </p>
                   <h3 className='text-xl md:text-2xl lg:text-3xl text-center mt-10 text-primary font-bold'>
-                    4 y 5 de Diciembre ¡No faltes!
+                    3 y 4 de Diciembre ¡No faltes!
                   </h3>
-                  {/* <div className='mx-auto mt-8 w-fit flex-none text-base lg:text-lg font-medium rounded-xl py-3 px-6 text-black bg-primary hover:bg-secondary/85 hover:scale-105'>
+                  { <div className='mx-auto mt-8 w-fit flex-none text-base lg:text-lg font-medium rounded-xl py-3 px-6 text-black bg-primary hover:bg-secondary/85 hover:scale-105'>
                   <Link
-                    to='https://docs.google.com/forms/d/e/1FAIpQLSdPmPZQSUtVt3pN-Dk3IOiIFgLFZ8DT6pNls18MvjHuOVF6lQ/viewform?usp=sf_link'
+                    to='https://docs.google.com/forms/d/e/1FAIpQLSdQa7pD2Wje4oZ_lg0XeCrbEMm-Xl6ii3L7uFLF7dOYvnc3MQ/viewform?usp=dialog'
                     className='active:text-white hover:font-semibold cursor-pointer'
                   >
                     Inscríbete
@@ -103,9 +103,9 @@ function Xmas () {
           />
         </div>
       </div>
-      <div className='container mx-auto px-4 mt-0 py-8'>
-        <PartnersLogos />
-      </div>
+      {/* <div className='container mx-auto px-4 mt-0 py-8'> */}
+        {/* <PartnersLogos /> */}
+      {/* </div> */}
     </div>
   )
 }
